@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+
+#container {
+    height: 80%;
+    width: 25%;
+    margin-top: 7%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 8px solid transparent;
+    background-color: rgba(31, 136, 223, 0.836);
+    animation: animationborder 3s infinite alternate;
+} 
+
+input{
+    
+    text-align: right;
+    font-size: 2.5em;
+    height: 50px;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background : transparent;
+    margin: 15px 0 15px 0;
+
+}
+.inputscreen{
+    text-align: center;
+    margin: 15px 0 15px 0;
+    
+}
+input::placeholder{
+    color: white;
+}
+
+button{
+    height: 40px;
+    width: 60px;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(8, 8, 8, 0.603);   
+    box-shadow: -8px -8px 15px rgba(247, 247, 247, 0.5);
+}
+#equalto{
+    height: 100px;
+    background-color: rgb(26, 231, 187);
+}
+.operator{
+    color: white;
+    background-color: rgba(245, 144, 61, 0.89) ;
+}
+@keyframes animationborder {
+    0%{
+        border-color: #0698fa;
+    }
+    25% {
+        border-color: #fc260e;
+    }
+    50% {
+        border-color: #fa35c9;
+    }
+    75% {
+        border-color: #05f105;
+    }
+    100% {
+        border-color: aqua;
+    }
+}
